@@ -1,4 +1,5 @@
-/src/org/santhoshkumar/BinarySearchTree.iml
+/out
+/BinarySearchTree.iml
 /.idea
 *.class
 
