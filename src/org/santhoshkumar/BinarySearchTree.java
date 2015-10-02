@@ -28,6 +28,28 @@ public class BinarySearchTree {
 
         bst.inOrder(bst.root);
         bst.verticalOrder();
+
+        System.out.println(bst.find(100));
+        System.out.println(bst.find(91));
+    }
+
+    public boolean find(int data){
+        if(root == null){
+            return false;
+        }
+
+        Node current = root;
+        while(current != null){
+            if(current.data == data){
+                return true;
+            }else if( current.data > data){
+                current = current.left;
+            }else{
+                current = current.right;
+            }
+        }
+
+        return false;
     }
 
     public void insert(int data ){
